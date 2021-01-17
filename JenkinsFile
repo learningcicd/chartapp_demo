@@ -32,3 +32,4 @@ stage('Setting up jenkinsfile properties') {
 //        git_branch = glb_customer_id
  //       docker_tag = glb_customer_subdomain
 // }
+
