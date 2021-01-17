@@ -1,0 +1,21 @@
+spring:
+  profiles: dev
+
+name: Andrei
+sex: Male
+dOB: 11-09-1987
+address: Sussex, London
+
+server:
+  port: 8611
+---
+spring:
+  profiles: qa
+
+name: Julie
+sex: Female
+dOB: 06-15-1991
+address: Leeds, London
+
+server:
+  port: 8611

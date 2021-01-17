@@ -1,0 +1,45 @@
+spring:
+  profiles: dev
+  application:
+    name: appservice
+  cloud:
+    discovery:
+      enabled: false
+    service-registry:
+      auto-registration:
+        enabled: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://192.168.0.141:8761/eureka/
+    healthcheck:
+      enabled: false
+
+---
+
+spring:
+  profiles: qa
+  application:
+    name: appservice
+  cloud:
+    discovery:
+      enabled: false
+    service-registry:
+      auto-registration:
+        enabled: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://192.168.0.141:8761/eureka/
+    healthcheck:
+      enabled: false
